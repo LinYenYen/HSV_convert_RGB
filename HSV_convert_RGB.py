@@ -1,3 +1,5 @@
+# 'hsv(0, 50%, 100%)'
+# 'rgb(0, 0, 255)'
 def hsv_to_rgb(color: str):
     color_type = color[:3]
     color_list = color[4:-1].split(',')
@@ -78,8 +80,8 @@ def hsv_to_rgb(color: str):
         print('Error Input Form!')
 
 if __name__ == '__main__':
-    hsv = 'hsv(0, 50%, 10%)'
-    rgb = 'rgb(0, 0, 104)'
+    hsv = 'hsv(0, 50%, 100%)'
+    rgb = 'rgb(0, 0, 255)'
     a = hsv_to_rgb(hsv)
     b = hsv_to_rgb(rgb)
     print(a)
