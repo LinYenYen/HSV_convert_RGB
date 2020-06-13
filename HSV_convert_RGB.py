@@ -15,29 +15,17 @@ def hsv_to_rgb(color: str):
         t = v * (1 - (1 - f) * s)
         # r, g, b
         if hi == 0:
-            r = v
-            g = t
-            b = p
+            (r, g, b) = (v, t, p)
         elif hi == 1:
-            r = q
-            g = v
-            b = p
+            (r, g, b) = (q, v, p)
         elif hi == 2:
-            r = p
-            g = v
-            b = t
+            (r, g, b) = (p, v, t)
         elif hi == 3:
-            r = p
-            g = q
-            b = v
+            (r, g, b) = (p, q, v)
         elif hi == 4:
-            r = t
-            g = p
-            b = v
+            (r, g, b) = (t, p, v)
         elif hi == 5:
-            r = v
-            g = p
-            b = q
+            (r, g, b) = (v, p, q)
         else:
             print('Error Input Form!')
         r = round(r*255)
